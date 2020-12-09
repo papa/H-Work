@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "97965147702",
+    "firebase_url": "https://kucnimajstor-8db08.firebaseio.com",
+    "project_id": "kucnimajstor-8db08",
+    "storage_bucket": "kucnimajstor-8db08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97965147702:android:ec4f4c9af63ccb83",
+        "android_client_info": {
+          "package_name": "com.dobrimajstori.kucnimajstor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97965147702-ogjb9e56p4corfj0sea2agq4kcd5n73o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dobrimajstori.kucnimajstor",
+            "certificate_hash": "3fcd5dc721317a37404f6471d0afd428b85ac0ec"
+          }
+        },
+        {
+          "client_id": "97965147702-245si5qma0hcj85g8u2rhvfn8hia2g4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSdKeLsxzu5_fumg9Hz90jpB5803LF_7k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "97965147702-245si5qma0hcj85g8u2rhvfn8hia2g4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

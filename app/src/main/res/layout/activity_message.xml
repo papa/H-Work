@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".MessageActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/infoKorisnikChat">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_korisnik"
+                        android:id="@+id/profilna"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imeiprezime"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="7dp"
+                        android:text="Ime i prezime"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"/>
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/ugovorButton"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+
+
+                    android:background="@drawable/button_ugovor"
+                    android:elevation="50dp"
+                    android:text="Ugovor"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+        
+        
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/poruke"
+            android:layout_below="@+id/bar_layout"
+            android:layout_above="@id/bottom"/>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/bottom"
+            android:background="#fff"
+            android:layout_alignParentBottom="true">
+
+            <EditText
+                android:id="@+id/tekstporuke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/posaljiporuku"
+                android:background="@android:color/transparent"
+                android:hint="Unesite poruku..."
+                android:inputType="text|textCapSentences"
+                android:textSize="16sp" />
+
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/posaljiporuku"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_action_name"/>
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

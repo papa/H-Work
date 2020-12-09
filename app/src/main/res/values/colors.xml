@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#594691</color>
+    <color name="colorPrimaryDark">#594691</color>
+    <color name="graylight">#fafafa</color>
+    <color name="colorAccent">#594691</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+
+    <color name="colorPrimaryTextDefaultMaterialLight">#41ABF1</color>
+    <color name="colorSecondaryTextDefaultMaterialLight">#8A000000</color>
+
+    <color name="colorPrimaryTextDefaultMaterialDark">#FFFFFFFF</color>
+    <color name="colorSecondaryTextDefaultMaterialDark">#B3FFFFFF</color>
+    <color name="holo_green_light">#11acf2</color>
+
+
+    <color name="orangeApp">#FD9D4C</color>
+
+
+    //prekopirano
+    <color name="bgBackSideColor">#f4f0ff</color>
+    <color name="bgTitleLeft">#594691</color>
+    <color name="bgTitleRight">#ffffff</color>
+    <color name="bgContentTop">#594691</color>
+    <color name="bgContent">#ffffff</color>
+    <color name="contentDividerLine">#e0e0e0</color>
+    <color name="contentBadgeTitle">#a9a9a9</color>
+    <color name="titleBadgeTitle">#adafb1</color>
+    <color name="titleBadgeText">#adafb1</color>
+    <color name="mainTextColor">#343d43</color>
+    <color name="btnRequest">#FD9D4C</color>
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PostavljanjePoslovaActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bid_background"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="15dp"
+            android:elevation="15dp"
+            android:padding="15dp"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Naslov" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/naslovposla"
+                        android:layout_height="wrap_content"
+                        android:hint="Sta želite da bude urađeno"
+                        android:inputType="textCapSentences"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Opis posla" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Opišite posao koji želite da bude urađen"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:singleLine="false"
+                        android:id="@+id/opisposla"/>
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="#c0c0c0" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Vaša ponuda"
+                        android:textSize="15sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/budzet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:text="100"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/budzet"
+                            android:text="din."
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="30dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="#c0c0c0" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Veštine" />
+
+                    <com.hootsuite.nachos.NachoTextView
+                        android:id="@+id/nacho_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:hint="Potrebne veštine za obavljanje posla"
+                        android:inputType="textCapWords|textMultiLine"
+                        app:chipHeight="30dp"
+                        app:chipSpacing="2dp"
+                        app:chipTextSize="16dp"
+                        app:chipVerticalSpacing="3dp" />
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/majstor_login"
+                        android:layout_marginTop="15dp"/>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/postaviposao"
+            android:background="@drawable/roundedbutton"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#fff"
+            android:text="Postavi posao" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

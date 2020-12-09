@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bid_background"
+        android:scaleType="centerCrop"/>
+
+
+
+    <LinearLayout
+        tools:context=".NapraviUgovorPoslodavac"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="15dp"
+            android:padding="15dp"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sastavljanje ugovora"
+                        android:textAlignment="center"
+                        android:textSize="30sp"
+                        android:layout_marginBottom="15dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/roundedbutton"
+                            android:text="Izaberi datum"
+                            android:id="@+id/setDatum"
+                            android:textColor="#fff"
+                            android:padding="10dp"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Izaberi vreme"
+                            android:background="@drawable/roundedbutton"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#fff"
+                            android:id="@+id/setVreme"
+                            android:padding="10dp"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="#c0c0c0" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Postavite cenu posla"
+                        android:textSize="20sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/cenaPoalaUgovor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:text="100"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/cenaPoalaUgovor"
+                            android:text="din."
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="30sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="#c0c0c0" />
+
+                    <android.support.v7.widget.CardView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        style="@style/CardView.Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:elevation="15dp"
+                        tools:ignore="ContentDescription">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/teksUgovora"
+                            android:inputType="textMultiLine"
+                            android:singleLine="false"
+                            android:hint="Teks ugovora"
+                            android:gravity="top"
+                            android:background="@null"
+                            android:padding="10dp"
+                            android:textSize="20sp"
+                            />
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/napraviugovor"
+                android:background="@drawable/roundedbutton"
+                android:text="Pošalji ugovor"
+                android:textColor="#fff"
+                android:layout_marginEnd="3dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/izbrisiRaskini"
+                android:textColor="#fff"
+                android:background="@drawable/roundedbutton"
+                android:text="Izbriši Ugovor"
+                android:layout_marginStart="3dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/oceniMajstoraNapraviUgovor"
+                android:textColor="#fff"
+                android:background="@drawable/roundedbutton"
+                android:text="Oceni Majstora"
+                android:layout_marginStart="3dp"
+                android:visibility="gone"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

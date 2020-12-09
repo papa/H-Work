@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgContent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <!-- LEFT TITLE PART -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/bgTitleLeft"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/title_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@android:color/white"
+                android:textSize="26sp" />
+
+
+
+
+        </RelativeLayout>
+        <!-- RIGHT TITLE PART -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bgTitleRight"
+            android:paddingBottom="20dp"
+            android:paddingEnd="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="20dp">
+
+
+            <TextView
+                android:id="@+id/title_from_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mainTextColor"
+                android:textStyle="bold"
+                android:layout_marginTop="-5dp"
+                android:text="Učitavanje..."
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:singleLine="true"
+                android:textSize="23sp" />
+
+            <ImageView
+                android:id="@+id/title_from_to_dots_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/title_from_address"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@color/contentDividerLine" />
+
+
+
+
+            <!-- avatar and name part -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_from_to_dots_divider"
+                android:id="@+id/avatarRelative">
+
+                <TextView
+                    android:id="@+id/content_avatar_title"
+                    style="@style/ContentMainBadgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="Poslodavac" />
+
+                <ImageView
+                    android:id="@+id/content_avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/content_avatar_title"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:id="@+id/content_name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/content_avatar"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/content_avatar"
+                    android:layout_toRightOf="@id/content_avatar"
+                    android:text="Učitavanje..."
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <!-- divider line -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="9dp"
+                android:src="@color/contentDividerLine"
+                android:layout_below="@id/avatarRelative"
+                android:id="@+id/ispodSlike"/>
+
+            <!-- addresses part -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detaljiRelative"
+                android:layout_below="@id/ispodSlike">
+
+
+                <TextView
+                    android:id="@+id/title_requests_count"
+                    style="@style/TitleBadgeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/budzetDetaljiText"
+                    android:layout_alignParentLeft="true"
+                    android:text=""
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    style="@style/TitleBadgeTitle"
+                    android:id="@+id/budzetDetaljiText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="BUDŽET" />
+
+                <TextView
+                    android:id="@+id/title_weight"
+                    style="@style/TitleBadgeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/daniNaslovContent"
+
+                    android:text="Nema" />
+
+                <TextView
+                    style="@style/TitleBadgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@id/title_weight"
+                    android:layout_alignStart="@id/title_weight"
+                    android:id="@+id/daniNaslovContent"
+                    android:text="UGOVOR" />
+
+                <TextView
+                    android:id="@+id/title_pledge"
+                    style="@style/TitleBadgeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ponudaTextNaslovNeDiraj"
+                    android:layout_centerHorizontal="true"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/TitleBadgeTitle"
+                    android:id="@+id/ponudaTextNaslovNeDiraj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/title_pledge"
+                    android:layout_alignStart="@id/title_pledge"
+                    android:layout_alignParentTop="true"
+                    android:text="PONUDA" />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

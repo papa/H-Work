@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kucni Majstor</string>
+    <string name="title_activity_pocetna">PocetnaActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_prijava">Prijava</string>
+    <string name="facebook_app_id">515776635549850</string>
+    <string name="fb_login_protocol_scheme">fb515776635549850</string>
+
+</resources>

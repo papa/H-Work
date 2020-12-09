@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MojNalogFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/moj_nalog_background2" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilnaslika"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_korisnik" />
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:id="@+id/imeiprezime"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilnaslika"
+        android:text="Pavle Janevski"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/ocenaKarticaNeDiraj"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iskustvo"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="125"
+                    android:id="@+id/poslovi"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/mainTextColor"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ocena"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="125"
+                    android:id="@+id/ocena"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/mainTextColor"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignLeft="@id/ocenaKarticaNeDiraj"
+        android:layout_below="@id/ocenaKarticaNeDiraj"
+        android:id="@+id/mailPoljeLinearNeDiraj"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_mail_outline_orenge_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:id="@+id/mail"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:text="pavle.jane@gmail.com"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/mailPoljeLinearNeDiraj"
+        android:layout_alignLeft="@id/mailPoljeLinearNeDiraj"
+        android:id="@+id/telefonLinearLayoutNeDiraj">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_phone_android_orange_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:id="@+id/telefon"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:text="0691045244"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/telefonLinearLayoutNeDiraj"
+        android:layout_alignLeft="@id/mailPoljeLinearNeDiraj">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_location_on_orange_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:id="@+id/lokacijaMojnalog"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:text="Ulica Broj"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_margin="20dp"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:background="@drawable/roundedbutton"
+            android:text="ODJAVITE SE"
+            android:id="@+id/buttonLogOut"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_margin="20dp"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:background="@drawable/roundedbutton"
+            android:text="Podešavanja naloga"
+            android:id="@+id/buttonPromeniPristup"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

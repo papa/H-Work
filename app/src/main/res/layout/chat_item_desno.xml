@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="2dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/pslika"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/poruka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/poruka_desno"
+                android:padding="8dp"
+                android:text="asfasfsfsfdfsfsdfffdsfsfsfsdfssfdfssdfsdfdfdfdfsfdsfsdfsfsfsfdsfsdf"
+                android:textColor="#fff"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datumivreme"
+                android:text="datum i vreme"
+                android:layout_below="@id/poruka"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+
+    
+</android.support.constraint.ConstraintLayout>

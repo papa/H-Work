@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="switch_tabs">
+        <item>"MAJSTOR"</item>
+        <item>"POSLODAVAC"</item>
+    </array>
+    <array name="switch_tabs_skola">
+        <item>"STANDARDNI NALOG"</item>
+        <item>"ŠKOLSKI NALOG"</item>
+    </array>
+
+
+</resources>

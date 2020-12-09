@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PodesavanjeNaloga">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_kartice2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/slikakoris"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_korisnik" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Promenite sliku!"
+            android:textSize="17sp" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            app:cardCornerRadius="15dp"
+            android:elevation="15dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kliknite na dugme za promenu naloga:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/infopromenanaloga"/>
+
+        <lib.kingja.switchbutton.SwitchMultiButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/majstorPoslodavacSwitch"
+            android:padding="8dp"
+            app:strokeRadius="5dp"
+            app:strokeWidth="1dp"
+            app:selectedTab="0"
+            app:selectedColor="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            app:switchTabs="@array/switch_tabs"
+            app:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Ime:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"/>
+
+        <EditText
+            android:id="@+id/editname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unesite novo ime"
+            android:inputType="textCapWords"
+            android:selectAllOnFocus="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prezime: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/prezimePodesavanjaTextinfo"
+            android:layout_marginLeft="3dp"
+            />
+
+        <EditText
+            android:id="@+id/editprezime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unesite novo prezime"
+            android:inputType="textCapWords" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-MAIL: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"/>
+
+        <EditText
+            android:id="@+id/editmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unesite novi e-mail"
+            android:inputType="textWebEmailAddress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broj telefona: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"/>
+
+        <EditText
+            android:id="@+id/editbrtelefona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unesite novi broj telefona"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Šifra: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"/>
+
+        <EditText
+            android:id="@+id/editpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unesite samo ako želite novu šifru"
+            android:inputType="textPassword" />
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokacija: "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Adresa"
+                    android:id="@+id/lokacijaPodesavanja"/>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/home_map_marker"
+                android:layout_alignParentRight="true"
+                android:id="@+id/promeniLokacijuPodesavanja"/>
+
+        </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp">
+
+
+            <ImageView
+                android:id="@+id/update"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_check_circle_maincollor_24dp"
+                android:layout_marginRight="5dp"/>
+
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_cancel_maincolor_24dp"
+                android:layout_marginLeft="5dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
